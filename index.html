@@ -12,20 +12,22 @@
 
     <h1>SUMA DE DOS NUMEROS</h1>
     <form>
-        <span>numero 1</span>
-        <input type="text" id="n1" name="n1" placeholder="numero1"><br><br>
-        <span>numero 2</span>
-        <input type="text" id="n2" name="n2" placeholder="numero2"><br><br>
+        <span>Numero 1</span>
+        <input type="text" id="n1" name="n1" placeholder="Numero1"><br><br>
+        <span>Numero 2</span>
+        <input type="text" id="n2" name="n2" placeholder="Numero2"><br><br>
         <select id="operaciones">
+            <option value="" selected="selected" hidden="hidden"></option>
             <option value="suma">Sumar</option>
             <option value="restar">Restar</option>
             <option value="multiplicar">Multiplicar</option>
             <option value="dividir">Dividir</option>
         </select>
-        <button type="button" onclick="sumar()">Calcular</button>
+        <button type="button" onclick="oper_aritmetica()">Calcular</button>
         <button type="button" onclick="borrar()">Borrar</button>
-    
     </form>
+
+    <div id="resultado"></div>
 
 <h1>El mayor</h1>
 <form>
@@ -41,6 +43,8 @@
     <button type="button" onclick="borrar()">Borrar</button>
 
 </form>
+
+<div id="resultado"></div>
 
 <form>
     <span>Hombre</span>
