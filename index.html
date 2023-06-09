@@ -11,11 +11,16 @@
 <body>
 
     <h1>SUMA DE DOS NUMEROS</h1>
+
     <form>
-        <span>Numero 1</span>
-        <input type="text" id="n1" name="n1" placeholder="Numero1"><br><br>
-        <span>Numero 2</span>
-        <input type="text" id="n2" name="n2" placeholder="Numero2"><br><br>
+        <span>
+            Numero 1
+            <input type="text" id="numero1" name="numero1" placeholder="Numero1"><br><br>
+        </span>
+        <span>
+            Numero 2
+            <input type="text" id="numero2" name="numero2" placeholder="Numero2"><br><br>
+        </span>
         <select id="operaciones">
             <option value="" selected="selected" hidden="hidden"></option>
             <option value="suma">Sumar</option>
@@ -24,43 +29,57 @@
             <option value="dividir">Dividir</option>
         </select>
         <button type="button" onclick="oper_aritmetica()">Calcular</button>
-        <button type="button" onclick="borrar()">Borrar</button>
+        <button type="button" onclick="borrar()">Borrar</button> <br> <br>
     </form>
 
-    <div id="resultado"></div>
+    Resultado <div id="resultado1"></div>
 
-<h1>El mayor</h1>
-<form>
-    <span>Nombre primera persona</span>
-    <input type="text" id="nombre1" name="nombre1" placeholder="Nombre de la primer persona"><br>
-    <span>numero 1</span>
-    <input type="text" id="n1" name="n1" placeholder="Edad de la primera persona"><br><br>
-    <span>Nombre Segunda persona persona</span>
-    <input type="text" id="nombre2" name="nombre2" placeholder="Nombre de la segund persona"><br>
-    <span>numero 2</span>
-    <input type="text" id="n2" name="n2" placeholder="Edad de la segunda persona"><br><br>
-    <button type="button" onclick="mayor()">Calcular</button>
-    <button type="button" onclick="borrar()">Borrar</button>
+    <h1>El mayor</h1>
 
-</form>
+    <form>
+        <span>
+            Nombre de la Primera Persona
+            <input type="text" id="nombre1" name="nombre1" placeholder="Nombre de la 1ra Persona"> <br> <br>
+        </span>
+        <span>
+            Edad de la Primera Persona
+            <input type="text" id="edad1" name="edad1" placeholder="Edad de la 1ra Persona"> <br> <br>
+        </span>
+        <span>
+            Nombre de la Segunda Persona
+            <input type="text" id="nombre2" name="nombre2" placeholder="Nombre de la 2da Persona"> <br> <br>
+        </span>
+        <span>
+            Edad de la Segunda Persona
+            <input type="text" id="edad2" name="edad2" placeholder="Edad de la 2da Persona"> <br> <br>
+        </span>
+        <button type="button" onclick="mayor()">Calcular</button>
+        <button type="button" onclick="borrar()">Borrar</button> <br> <br>
+    </form>
 
-<div id="resultado"></div>
+    Resultado <div id="resultado2"></div> <br>
 
-<form>
-    <span>Hombre</span>
-    <input type="checkbox" id="Hombre">
-    <br><span>Mujer</span>
-    <input type="checkbox" id="Mujer">
-    <br><span>Nino</span>
-    <input type="checkbox" id="Nino">
-    <br><span>Nina</span>
-    <input type="checkbox" id="Nina">
-<br><br>
+    <h1></h1>
+
+    <form>
+        <span>
+            Hombre
+            <input type="checkbox" id="Hombre"> <br>
+        </span>
+        <span>
+            Mujer
+            <input type="checkbox" id="Mujer"> <br>
+        </span>
+        <span>
+            Nino
+            <input type="checkbox" id="Nino"> <br>
+        </span>
+        <span>
+            Nina
+            <input type="checkbox" id="Nina"> <br> <br>
+        </span>
     <button type="button" onclick="comparar()">Calcular</button>
     <button type="button" onclick="borrar()">Borrar</button>
-</form>
-
-    <div id="resultado"></div>
-
+    </form>
 </body>
 </html>

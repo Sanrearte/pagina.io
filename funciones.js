@@ -1,30 +1,30 @@
 function oper_aritmetica() {
 
-    var num1 = document.getElementById("n1").value;
-    var num2 = document.getElementById("n2").value;
+    var num1 = document.getElementById("numero1").value;
+    var num2 = document.getElementById("numero2").value;
     var operacion = document.getElementById("operaciones").value;   
     var result;
     
     num1 = parseInt(num1);
     num2 = parseInt(num2);
     
-    if (isNaN(num1) || isNaN(num2)) { alert("Pone numeros carnero"); }
+    if (isNaN(num1) || isNaN(num2)) { alert("Debe introducir numeros en la casilla"); }
 
     if (operacion == "suma") { result = num1 + num2; }
 
-    if (operacion == "restar") { result=num1-num2; }
+    if (operacion == "restar") { result = num1 - num2; }
 
-    if (operacion == "multiplicar") { result = num1*num2; }
+    if (operacion == "multiplicar") { result = num1 * num2; }
 
-    if (operacion == "dividr") { result= (num1 / num2); }
+    if (operacion == "dividr") { result = (num1 / num2); }
 
-    document.getElementById("resultado").innerHTML = result;
+    document.getElementById("resultado1").innerHTML = result;
 }
 
 function mayor() {
 
-    var num1 = document.getElementById("n1").value;
-    var num2 = document.getElementById("n2").value;
+    var num1 = document.getElementById("edad1").value;
+    var num2 = document.getElementById("edad2").value;
     var nomb1 = document.getElementById("nombre1").value;
     var nomb2 = document.getElementById("nombre2").value;
     var mayor;
@@ -32,11 +32,23 @@ function mayor() {
     num1 = parseInt(num1);
     num2 = parseInt(num2);
 
-    if (num1 > num2) { document.getElementById("resultado").innerHTML = "el mayor es " + nomb1; }
+    if (num1 > num2) {
 
-    else if (num2 > num1) { document.getElementById("resultado").innerHTML = "el mayor es " + nomb2; }
+        mayor = "El mayor es: " + nomb1;
+        document.getElementById("resultado2").innerHTML = mayor;
+    }
 
-    else if (num1 = num2) { document.getElementById("resultado").innerHTML = "Tienen la misma edad"; }
+    else if (num2 > num1) {
+
+        mayor = "El mayor es: " + nomb2;
+        document.getElementById("resultado2").innerHTML = mayor;
+    }
+
+    else if (num1 = num2) {
+
+        mayor = "Tienen la misma edad";
+        document.getElementById("resultado2").innerHTML = mayor;
+    }
 }
 
 function comparar() {
@@ -93,7 +105,6 @@ function comparar() {
 
     else if (opcion4) { contador++; }
 }
-
 
 function borrar() {
 
